@@ -1,0 +1,64 @@
+h1{
+    color: rgb(74, 78, 105);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+input {
+    border-radius: 5px;
+    padding: 10px 10px;
+    text-transform: uppercase;
+    text-align: center;
+    box-shadow: 5px 5px rgb(201, 173, 167);
+    margin: 2px 5px;
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: rgb(201, 173, 167);
+    background-image: url('/img/kisspng-bubble-tea-aoharu-x-machinegun-mist-poke-dessert-b-bubble-milk-tea-5b2886d18e47a3.7285950315293826095828.png');
+    background-position: center;
+    background-size: cover;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 200px;
+    background: rgb(154, 140, 152);
+    padding-bottom: 150px;
+    border-radius: 30px;
+}
+
+.bbt{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+@media (max-width: 950px){
+    .container {
+        margin: 200px 100px;
+    }
+}
+
+@media (max-width: 700px){
+    .container {
+        margin: 150px 50px;
+        padding: 30px 20px 50px 20px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+}

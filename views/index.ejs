@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Battle of the Bubble Teas</h1>
+
+        <h2>Add Your Favourite Drink:</h2>
+
+        <form action="/addBubbleTea" method="POST">
+            <!-- stage name -->
+            <input type="text" placeholder="Drink Name" name="bubbleTeaName" required>
+            <!-- birth name -->
+            <input type="text" placeholder="Place" name="bubbleTeaShop" required>
+            <input type="submit">
+        </form>
+        
+        <!-- class to identify bubble tea -->
+        <ul class="bubbleteas">
+        <% for(let i=0; i < info.length; i++) {%>
+            <li class="bbt">
+                <span><%= info[i].bubbleTeaName %></span>
+                <span><%= info[i].bubbleTeaShop %></span>
+                <span><%= info[i].likes %></span>
+                <span class='fa fa-thumbs-up'></span>
+                <span class='fa fa-trash'></span>
+            </li>
+        <% } %>
+        </ul>
+    </div>
+    <script src='js/main.js'></script>
+</body>
+</html>
